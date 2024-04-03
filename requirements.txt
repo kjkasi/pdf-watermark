@@ -1,4 +1,4 @@
-fastapi
-uvicorn
-python-multipart
-pypdf
+fastapi==0.110.1
+uvicorn==0.29.0
+python-multipart==0.0.9
+pypdf==4.1.0
