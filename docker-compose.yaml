@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  api:
+    container_name: app
+    image: pdfwm/app
+    environment:
+      - name=value
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8082:80
+      - 5679:5679
+    volumes:
+      - ./src/:/app/src/:ro
